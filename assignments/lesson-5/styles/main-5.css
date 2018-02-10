@@ -1,0 +1,112 @@
+/* This main css file contains the default rules and is geared toward the small/phone view */
+
+* { box-sizing: border-box;}  /* This wildcard applies to all elements ensuring a box layout model */
+
+body {
+    font-family: arial, helvetic, sans-serif;
+    font-size: 16px;
+    /* Declare the base font-family - from google font api or other */
+}
+
+.container{
+    margin: 0 auto;
+    max-width: 900px;
+    padding: 0 10px;
+}
+
+header, nav, main, footer {
+    /* the comma means apply the following CSS declarations to all of the listed elements */
+    /* Declare the maximum width and other main element rules to limit the stretch on wide views */
+}
+
+header {
+    vertical-align: middle;
+    margin-bottom: 20px;
+}
+
+header img {
+    display: inline-block;
+    vertical-align: middle;
+    width: 110px;
+}
+
+header .site-title {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 10px;
+}
+
+header h1 {
+    color: deepskyblue;
+    margin: 0;
+    font-size: 25px;
+}
+
+header .subheading {
+    font-size: 12px;
+}
+
+
+nav {}
+nav button {}
+nav ul { display: none;}
+nav ul li {}
+nav ul li a {}
+nav ul li.active a {}
+nav ul li a:hover {}
+
+main { }
+main h2 { text-align: center; color: deepskyblue;}
+main figure { margin: 0; width: 100%; }
+
+main figure img {
+    width: 100%;
+    height: auto;
+}
+
+section h2{
+    display: none;
+}
+
+.current{
+    font-size: 20px;
+    text-align: center;
+    vertical-align: middle;
+    margin-bottom: 10px;
+}
+
+.current picture{
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 10px;
+   }
+
+.highlow{
+    text-align: center;
+    vertical-align: middle;
+    margin-bottom: 5px;
+}
+
+.highlow p{
+    display: inline-block;
+    margin: 0 10px;
+}
+.conditions p{
+    text-align: center;
+    margin: 5px 0;
+}
+
+.forecast{
+    display: none;
+}
+
+article p.town-article img {  /* This structure refers to img elements that are the posterity of paragraph elements within artcle elements */
+    width: 300px; /* fill the page in the small/phone view */
+    margin: 0;
+}
+
+footer {}
+footer aside {}
+footer>p {} /* This structure refers to p elements that are direct children of the footer element */
+
+/* Other Class Selectors */
