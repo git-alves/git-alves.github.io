@@ -5,15 +5,18 @@
         padding: 0 20px;
     }
 
-    header h1{font-size: 36px;}
+    header h1 {
+        font-size: 36px;
+    }
 
-    header .subheading{font-size: 20px;}
+    header .subheading {
+        font-size: 20px;
+
+    }
 
     .forecast table{
         width: 100%;
     }
-
-    nav ul.hide{display: block;}
 
     nav ul{
         list-style-type: none;
@@ -21,17 +24,19 @@
         padding: 0;
         display: block;
         overflow: hidden;
+        background-color: lightskyblue;
     }
 
     nav li{
         float: left;
     }
 
-    nav ul li a{
+    li a{
         display: block;
+        color: black;
         text-align: center;
-        padding: .8rem 1rem;
-        border-right: 1px solid rgba(0,0,0,0.3);
+        padding: 14px  16px;
+        border-right: 1px solid #bbb;
         text-decoration: none;
     }
 
@@ -39,7 +44,9 @@
         background-color: #ddd;
     }
 
-    main{margin-top: 10px;}
+    main{
+        margin-top: 10px;
+    }
 
     main figure{
         margin: 0;
@@ -55,7 +62,9 @@
         vertical-align: top;
     }
 
-    .temperature h2{margin: 0 0 10px 0;}
+    .temperature h2{
+        margin: 0 0 10px 0;
+    }
 
     .current{
         font-size: 20px;
@@ -86,12 +95,12 @@
         margin: 5px 0;
     }
 
-    table, th, td{
+    table, th, td {
         border: 1px solid black;
         border-collapse: collapse;
     }
 
-    th, td{
+    th, td {
         padding: 10px;
     }
 
@@ -100,67 +109,14 @@
         text-align: center;
     }
 
-    table .title{background-color: #EB7F00;}
-
-    nav button { display:none;}  /* hamburger button does not need to be shown */
-
-    section.forecast { display: block;}  /* show the 10-day forecast with the medium view and up */
-
-    article{
-        display: block;
-        width: 100%;
-        border: 2px solid grey;
-        padding: 10px;
-        margin: 5px 0 0 0;
+    table .title{
+        background-color: darkgrey;
     }
 
-    article h3{
-        display: block;
-        position: relative;
-        text-align: center;
-        top: -20px;
-    }
+    nav button { display:none; }  /* hamburger button does not need to be shown */
 
-    article p.town-article{
-        display: block;
-        position: relative;
-        text-align: left;
-        top: -30px;
-    }
+    section.forecast { display: block; }  /* show the 10-day forecast with the medium view and up */
 
-    article p.town-article img{
-        width: 55%;
-        float: right;
-        height: 150px;
-        }  /* responsive images */
-
-
-    /*---------------footer---------------*/
-
-    footer aside{
-        display: inline-block;
-        padding: 2px;
-        height: auto;
-        margin-top: -10px;
-        width: 100%;
-        vertical-align: middle;
-        text-align: center;
-    }
-
-    footer p.footer-bar{
-        position: relative;
-        width: 100%;
-        margin: 0;
-        text-align: center;
-        margin-bottom: 25px;
-        color: #fff;
-    }
+    article p.town-article img { width: 62.666%; float:right; }  /* responsive images */
 
 }
-
-
-
-
-
-
-
