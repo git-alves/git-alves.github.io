@@ -1,0 +1,98 @@
+@media only screen and (min-width: 64em) {
+    /* Only CSS rules that need to be changed to meet the layout needs from medium to large/wide go in here */
+
+    nav ul li a{
+        padding: .6rem 1rem;
+    }
+
+    main{
+        margin-top: 0;
+    }
+
+    main figure {
+        margin: 0;
+        width: 100%;
+        display: block;
+    }
+
+    main figure img{
+        height: 250px;
+    }
+
+    main .temperature{
+        margin-top: 10px;
+        width: 100%;
+        display: block;
+
+    }
+
+    .temperature h2{
+        margin: 0 0 10px 0;
+
+    }
+
+    .current{
+        font-size: 20px;
+        text-align: center;
+        vertical-align: middle;
+        margin-bottom: 10px;
+        display: inline-block;
+        width: 25%;
+        position: relative;
+    }
+
+    .current span{
+        padding: 40px 0 40px 110px;
+        display: block;
+    }
+
+    .current picture{
+        display: block;
+        margin-left: 0;
+        float: none;
+        position: absolute;
+        top: 0;
+
+    }
+    .highlow{
+        text-align: center;
+        vertical-align: middle;
+        margin-bottom: 0;
+        display: inline-block;
+        width: 33%;
+    }
+
+    .highlow p{
+        display: block;
+        margin: 5px 0;
+    }
+
+    .conditions{
+        display: inline-block;
+        width: 33%;
+        vertical-align: middle;
+    }
+    .conditions p{
+        text-align: center;
+        margin: 5px 0;
+    }
+
+    article{ border-top: 0; border-bottom: 0; margin: 0;}
+
+
+    article p.town-article img{
+        display: block;
+        position: relative;
+        width: 50%;
+        float: right;
+        height: 120px;
+    }
+
+    footer aside{margin-top: -27px}
+
+
+
+
+
+
+
