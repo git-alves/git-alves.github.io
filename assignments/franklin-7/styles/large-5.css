@@ -12,7 +12,7 @@
     main figure {
         margin: 0;
         width: 100%;
-        display: block;
+        display: flex;
     }
 
     main figure img{
@@ -22,7 +22,7 @@
     main .temperature{
         margin-top: 10px;
         width: 100%;
-        display: block;
+        display: flex;
 
     }
 
@@ -36,9 +36,9 @@
         text-align: center;
         vertical-align: middle;
         margin-bottom: 10px;
-        display: inline-block;
+        display: inline-flex;
         width: 25%;
-        position: relative;
+
     }
 
     .current span{
@@ -47,33 +47,32 @@
     }
 
     .current picture{
-        display: block;
-        margin-left: 0;
-        float: none;
-        position: absolute;
-        top: 0;
+        display: flex;
+        justify-content: flex-start;
+        align-content: center;
+        margin-top: -90px;
 
     }
+
     .highlow{
         text-align: center;
-        vertical-align: middle;
-        margin-bottom: 0;
-        display: inline-block;
-        width: 33%;
+        display: inline-flex;
+        justify-content: space-around;
+        width: 30%;
     }
 
     .highlow p{
-        display: block;
-        margin: 5px 0;
+        display: flex;
+        margin: 40px 0;
     }
 
     .conditions{
-        display: inline-block;
+        display: inline-flex;
+        flex-direction: column;
         width: 33%;
-        vertical-align: middle;
     }
     .conditions p{
-        text-align: center;
+        text-align: right;
         margin: 5px 0;
     }
 
@@ -81,8 +80,7 @@
 
 
     article p.town-article img{
-        display: block;
-        position: relative;
+        display: flex;
         width: 50%;
         float: right;
         height: 120px;

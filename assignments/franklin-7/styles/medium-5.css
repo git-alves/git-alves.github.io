@@ -13,13 +13,16 @@
         width: 100%;
     }
 
-    nav ul.hide{display: block;}
+    nav ul.hide{
+        display: inline-flex;
+        flex-direction: row;
+    }
 
     nav ul{
         list-style-type: none;
         margin: 0;
         padding: 0;
-        display: block;
+        display: flex;
         overflow: hidden;
     }
 
@@ -28,7 +31,7 @@
     }
 
     nav ul li a{
-        display: block;
+        display: flex;
         text-align: center;
         padding: .8rem 1rem;
         border-right: 1px solid rgba(0,0,0,0.3);
@@ -42,30 +45,34 @@
     main{margin-top: 10px;}
 
     main figure{
-        margin: 0;
+        margin: 5px 0;
         width: 50%;
-        display: inline-block;
-        vertical-align: top;
+        display: inline-flex;
+        height: auto;
+        align-items: center;
     }
 
     main .temperature{
         margin: 0;
         width: 45%;
-        display: inline-block;
+        display: inline-flex;
+        flex-direction: row;
         vertical-align: top;
     }
 
     .temperature h2{margin: 0 0 10px 0;}
 
     .current{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
         font-size: 20px;
         text-align: center;
         vertical-align: middle;
-        margin-bottom: 10px;
     }
 
     .current picture{
-        display: block;
+        display: flex;
         margin-left: 10px;
         float: left;
     }
@@ -77,16 +84,15 @@
     }
 
     .highlow p{
-        display: inline-block;
-        margin: 0 10px;
+        display: inline-flex;
+        margin: 2px -10px;
+
     }
 
     .conditions p{
         text-align: right;
-        margin: 5px 0;
+        margin: 10px 2px 2px;
     }
-
-
 
     table, th, td{
         border: 1px solid black;
@@ -106,7 +112,7 @@
 
     nav button { display:none;}  /* hamburger button does not need to be shown */
 
-    section.forecast { display: block;}  /* show the 10-day forecast with the medium view and up */
+    section.forecast { display: flex;}  /* show the 10-day forecast with the medium view and up */
 
     article{
         display: block;
@@ -114,6 +120,13 @@
         border: 2px solid grey;
         padding: 10px;
         margin: 5px 0 0 0;
+    }
+
+    article h3{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        top: -20px;
     }
 
     article h3{
@@ -134,13 +147,15 @@
         width: 55%;
         float: right;
         height: 150px;
-        }  /* responsive images */
+    }  /* responsive images */
+
+
 
 
     /*---------------footer---------------*/
 
     footer aside{
-        display: inline-block;
+        display: inline-flex;
         padding: 2px;
         height: auto;
         margin-top: -10px;
@@ -150,7 +165,6 @@
     }
 
     footer p.footer-bar{
-        position: relative;
         width: 100%;
         margin: 0;
         text-align: center;

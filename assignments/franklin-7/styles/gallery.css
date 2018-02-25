@@ -22,21 +22,21 @@ header{
 }
 
 header img{
-    display: grid;
+    display: inline-flex;
+    max-width: 20%;
     vertical-align: middle;
-    width: 110px;
 }
 
 header .site-title{
-    display: grid;
-    vertical-align: middle;
-    margin-left: 130px;
+    margin-top: -45px;
+    flex-wrap: wrap;
+    margin-left: 100px;
 }
 
 header h1{
     color: #1595A3;
     margin: 0;
-    font-size: 50px;
+    font-size: 22px;
 }
 
 header .subheading{
@@ -97,11 +97,6 @@ main img{
     margin: 0;
 }
 
-main img:hover{
-    box-shadow: 5px 5px 10px #1595a3;
-}
-
-
 footer aside{
     display: inline-grid;
     padding: 0;
@@ -133,13 +128,21 @@ footer p.footer-bar{
         padding: 0 20px;
     }
 
-    header h1{font-size: 36px;}
+    header h1{font-size: 40px;}
 
-    header .subheading{font-size: 20px;}
+    .site-title{
+        display: inline-flex;
+        flex-direction: column;
+
+    }
+
+    header .subheading{
+        font-size: 20px;
+    }
 
     nav button{display: none;}
 
-    nav ul.hide{display: block;}
+    nav ul.hide{display: flex;}
 
     nav ul{
         list-style-type: none;
@@ -179,8 +182,11 @@ footer p.footer-bar{
         padding: .6rem 1rem;
     }
 
-    nav ul.hide{display: block;}
+    nav ul.hide{display: flex;}
 
+    main img:hover{
+        box-shadow: 5px 5px 10px #1595a3;
+    }
 
     .grid-container{
         display: grid;
