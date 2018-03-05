@@ -34,16 +34,16 @@
         </nav>
         <main>
 
-            <p>progress:<progress value="2" max="5"></progress></p>
-            <form action="/assignments/lesson-8/thanks.html" method="post" enctype="multipart/form-data" autocomplete="on" name="report" id="report">
+            <p>progress:<progress value="1" max="5"></progress></p>
+            <form action="/assignments/lesson-8/thanks.html"  enctype="multipart/form-data" autocomplete="on" name="report" id="report">
 
                 <fieldset>
                     <legend><span>Personal Information</span></legend>
                     <label><span>Full Name:</span><input name="fullname" type="text" value="" placeholder="Full name" pattern="[a-zA-Z ]{3,99}" autofocus required ></label>
                     <label><span>Email:</span><input name="email" type="email" value="" placeholder="example@email.com" required ></label>
-                    <label><span>Phone:</span><input name="phone" type="tel" value="" placeholder="9999-999" maxlength="12" pattern="[0-9]{10,20}" required ></label>
+                    <label><span>Phone:</span><input name="phone" type="tel" value="" placeholder="xxxx-xxx-xxxx" maxlength="14" pattern="^\d{4}-\d{3}-\d{4}$" required ></label>
                     <label><span>Zip Code:</span><input name="zipcode" type="tel"
-            placeholder="00000"  maxlength="5" required></label>
+            placeholder="xxxxx"  maxlength="5" required></label>
                 </fieldset>
                 <fieldset>
                     <legend><span>Storm Info</span></legend>
@@ -65,7 +65,7 @@
 
                     <label><span>Storm Region:</span>
                 <select name="region">
-                    <option selected disabled>Select Region ...</option>
+                    <option selected disabled >Select Region ...</option>
                     <option value="franklin">Franklin</option>
                     <option value="greenville">Greenville</option>
                     <option value="springfield">Springfield</option>
@@ -73,13 +73,13 @@
             </label>
                     <div class="radiocolor">
                         <label><span>User In-Danger Level:</span></label>
-                        <input name="radio" type="radio" value="yes"> Yes<br>
+                        <input name="radio" type="radio" value="yes" required> Yes<br>
                         <input name="radio" type="radio" value="maybe"> Maybe<br>
                         <input name="radio" type="radio" value="no"> No<br>
                     </div>
                     <div class="comment-text-area">
                         <label><span>Additional Information or Comments:</span></label>
-                        <textarea rows="5" cols="105" placeholder="Comment"></textarea>
+                        <textarea rows="5" cols="50" placeholder="Comment"></textarea>
                     </div>
                     <input type="submit" value="Submit" class="submitBtn">
                     <input type="hidden" value="report" name="subject">
