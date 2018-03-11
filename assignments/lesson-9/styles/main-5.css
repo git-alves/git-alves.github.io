@@ -102,10 +102,13 @@ nav ul li.active a{background-color: rgba(0,0,0,0.2);color: #fff;}
 nav ul.hide{display: none;}
 
 .story{
+    background-color: #fff;
     margin: 10px 0;
     padding: 10px;
-    border: 1px solid #000;
-    -webkit-box-sizing: border-box;
+    border: 1px solid;
+    padding: 10px;
+    box-shadow: 2px 2px #888888;
+    -webkit-box-sizing: border-box
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
@@ -119,26 +122,27 @@ nav ul.hide{display: none;}
 }
 
 .story p{
-    white-space: wrap;
     padding: 10px;
-    margin: 1px;
+    margin-left: 2px;
+    margin-right: 2px;
     display: flex;
     justify-content: center;
     align-content: center;
-    flex-direction: column;
     text-align: center;
-    border-right: 10px;
-    border-left: 10px;
 }
 
-.story,.image{
+.story img{
+    border-radius: 10px;
+    margin-top: 24px;
+    width: 100%;
+    height: auto;
     display: flex;
     justify-content: center;
     align-content: center;
     flex-direction: column;
-    padding: 10px;
 
 }
+
 
 main h2 { text-align: center;}
 main figure { margin: 2px 0; width: 100%;}
@@ -147,38 +151,53 @@ main figure img {
     width: 100%;
     height: auto;
 }
-
+section{
+    background-color: #fff;
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid;
+    padding: 10px;
+    box-shadow: 3px 2px #888888;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
 section h2{
-    display: none;
+    margin-top: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.current{
-    font-size: 20px;
+.stats{
+
+    display: flex;
+    flex-direction: column;
+
+}
+
+.stats p{
+    margin: 2px;
+    justify-content: center;
     text-align: center;
-    vertical-align: middle;
-    margin-bottom: 10px;
 }
 
-.current picture{
-    display: inline-flex;
-    vertical-align: middle;
-    margin-left: 10px;
-   }
-
-.highlow{
-    text-align: center;
-    vertical-align: middle;
-    margin-bottom: 5px;
+.stats img{
+    border-radius: 10px;
+    margin-top: 24px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
 }
 
-.highlow p{
-    display: inline-flex;
-    margin: 0 10px;
-}
-.conditions p{
-    text-align: center;
-    margin: 5px 0;
-}
+
+
+
+
+
 
 .forecast{
     display: none;
