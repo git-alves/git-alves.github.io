@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en-us">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Franklin Weather</title>
+        <meta name="author" content="Andre Alves">
+        <meta name="description" content="weather forecast website">
+        <!-- external style references in the proper cascading order -->
+        <link href="https://fonts.googleapis.com/css?family=lato" rel="stylesheet">
+        <!-- Google API font reference -->
+        <link href="styles/normalize.css" rel="stylesheet">
+        <!-- normalize useragent/browser defaults -->
+        <link href="styles/main-5.css" rel="stylesheet">
+        <!-- default styles - small/phone views -->
+        <link href="styles/medium-5.css" rel="stylesheet">
+        <!-- medium/tablet views -->
+        <link href="styles/large-5.css" rel="stylesheet">
+        <!-- large/wide/desktop views -->
+    </head>
+
+    <body>
+        <div class="container">
+            <header>
+                <img src="images/logo3.png" alt="The site logo">
+                <div class="site-title">
+                    <h1><strong>Live Weather</strong></h1>
+                    <div class="subheading">Updating you everyday!</div>
+                </div>
+
+            </header>
+
+            <!-- site navigation use placeholder references -->
+            <nav>
+                <button class="hamburger" onclick="toggleNavMenu()">&#9776;</button>
+                <ul id="Navigation" class="hide">
+                    <li><a href="#">Home</a></li>
+                    <li class="active"><a href="#">Franklin</a></li>
+                    <li><a href="#">Greenville</a></li>
+                    <li><a href="#">Springfield</a></li>
+                    <li><a href="/assignments/lesson-8/stormcenter.html">Storm Center</a></li>
+                    <li><a href="/assignments/lesson-8/gallery.html">Gallery</a></li>
+                </ul>
+            </nav>
+
+            <main>
+                <div class="story">
+                    <h2>weather Story</h2>
+                    <p>nasifbbsfbiabfiabifbaifbiabfihabfiabfih
+                    jabfafijjabfiabifbaifbiafbiabfiabifbaifbia
+                    afijjabfiabifbaifbaifbiabfiabfiabfiabbfiba
+                    dsfsdsdfsddfsdfsdfsdfsdfsdfdsfsdfsdfsddfsdsdefsdfdsfsdfsdfsddf
+                    asdadsadsadsadasdssadasdasdasdasdasdasdadasdadadadas</p>
+                    <img src="images/fall%20.jpg" alt="" >
+                </div>
+                <section class="temperature">
+                    <h2>Franklin</h2>
+                    <div class="current">
+                        <span>Sunny</span>
+                        <picture>
+                            <img src="images/sun-picture.png" alt="" width="100" height="90">
+                        </picture>
+                    </div>
+                    <div class="highlow">
+                        <p>High: <span id="high"><strong>50&deg;F</strong></span></p>
+                        <p>Low: <span id="low"><strong>44&deg;F</strong></span></p>
+                    </div>
+
+                    <div class="conditions">
+                        <p>Precipitation: <strong>0%</strong></p>
+                        <p>Wind Speed: <span id="wind"><strong>7 mph SW</strong></span></p>
+                        <p>Wind Chill: <strong><span id="Chill"></span>&deg;F</strong></p>
+                    </div>
+
+                </section>
+
+                <section class="forecast">
+                    <h2>Forecast</h2>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th class="title" colspan="10">
+                                    10 Day Forecast
+                                </th>
+                            </tr>
+                            <tr>
+                                <th>Day 1</th>
+                                <th>Day 2</th>
+                                <th>Day 3</th>
+                                <th>Day 4</th>
+                                <th>Day 5</th>
+                                <th>Day 6</th>
+                                <th>Day 7</th>
+                                <th>Day 8</th>
+                                <th>Day 9</th>
+                                <th>Day 10</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>89&deg;F</td>
+                                <td>87&deg;F</td>
+                                <td>78&deg;F</td>
+                                <td>75&deg;F</td>
+                                <td>72&deg;F</td>
+                                <td>72&deg;F</td>
+                                <td>79&deg;F</td>
+                                <td>83&deg;F</td>
+                                <td>85&deg;F</td>
+                                <td>89&deg;F</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+
+                <article>
+                    <h3><strong>Franklin Breaks Record</strong></h3>
+                    <p class="town-article">
+                        <img src="images/article_image.jpg" alt=""> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur facilisis elit vel pulvinar bibendum. Integer mi orci, egestas non varius at, hendrerit eu ligula. Etiam eget ipsum congue, rhoncus lorem at, ullamcorper sem.
+                    </p>
+                </article>
+            </main>
+            <footer>
+                <aside>
+                    <p><strong>Live Weather</strong><br> 123 main st.<br> Franklin, MU 83454<br> (999)999.9999
+                        <br> live@weather.com
+                        <br>
+                    </p>
+                </aside>
+                <p class="footer-bar">&copy;2018 | Live Weather | <span id="currentdate">current date</span></p>
+            </footer>
+        </div>
+        <script src="scripts/hamburger.js"></script>
+        <script src="scripts/currentdate.js"></script>
+        <script src="scripts/windchill.js"></script>
+    </body>
+
+</html>
