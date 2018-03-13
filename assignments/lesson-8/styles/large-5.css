@@ -80,11 +80,20 @@
 
 
     article p.town-article img{
+        margin-top: 15px;
         display: flex;
         width: 50%;
         float: right;
         height: 120px;
     }
+
+    .town-article,.info{
+        margin-bottom: 1px;
+        text-align:left;
+        justify-content: center;
+        align-items: center;
+    }
+
 
     footer aside{margin-top: -27px}
 }

@@ -114,6 +114,13 @@
 
     section.forecast { display: flex;}  /* show the 10-day forecast with the medium view and up */
 
+
+    .town-info{
+        background: #fff;
+        text-align: center;
+
+
+    }
     article{
         display: block;
         width: 100%;

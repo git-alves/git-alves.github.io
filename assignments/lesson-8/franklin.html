@@ -50,8 +50,6 @@
                                  images/franklin-medium.jpg 500w,
                                  images/franklin-large.jpg 1000w">
 
-
-
             </figure>
             <section class="temperature">
                 <h2>Franklin</h2>
@@ -112,11 +110,15 @@
                     </tbody>
                 </table>
             </section>
+            <article class="town-info">
 
+            </article>
             <article>
                 <h3><strong>Franklin Breaks Record</strong></h3>
                 <p class="town-article">
-                    <img src="images/article_image.jpg" alt=""> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur facilisis elit vel pulvinar bibendum. Integer mi orci, egestas non varius at, hendrerit eu ligula. Etiam eget ipsum congue, rhoncus lorem at, ullamcorper sem.
+                    <img src="images/article_image.jpg" alt="">
+                        <p class="info">Franklin is a city just south of Nashville, in Tennessee. A key site of the American Civil War, it’s home to 2 properties exploring the 1864 Battle of Franklin: Carter House and Carnton Plantation, which includes the McGavock Confederate Cemetery. The 1858 Lotz House contains a large collection of 19th-century furniture. Downtown’s Main Street is lined with galleries, antique shops and restored Victorian buildings..
+                        </p>
                 </p>
             </article>
         </main>
@@ -133,6 +135,52 @@
     <script src="scripts/hamburger.js"></script>
     <script src="scripts/currentdate.js"></script>
     <script src="scripts/windchill.js"></script>
+    <script>
+
+        var article = document.querySelector('article');
+        var requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
+        var request = new XMLHttpRequest();
+        request.open('GET', requestURL);
+        request.responseType = 'json';
+        request.send();
+        request.onload = function() {
+            var towns = request.response;
+            showFranklin(towns);
+        }
+        function showFranklin(jsonObj) {
+            var towns = jsonObj['towns'];
+            var myH3 = document.createElement('h3');
+            var myPara1 = document.createElement('p');
+            var myPara2 = document.createElement('p');
+            var myPara3 = document.createElement('p');
+            var myPara4 = document.createElement('p');
+            var myPara5 = document.createElement('p');
+            var myList = document.createElement('p');
+
+            myH3.textContent = towns[0].name;
+            myPara1.textContent = 'Motto: ' + towns[0].motto;
+            myPara2.textContent = 'Year Founded: ' + towns[0].yearFounded;
+            myPara3.textContent = 'Current Population: ' + towns[0].currentPopulation;
+            myPara4.textContent = 'Average Rainfall: ' + towns[0].averageRainfall;
+            myPara5.textContent = 'Events: ';
+
+            var events = towns[0].events;
+            for (var j = 0; j < events.length; j++) {
+                var listItem = document.createElement('p');
+                listItem.textContent = events[j];
+                myList.appendChild(listItem);
+            }
+            article.appendChild(myH3);
+            article.appendChild(myPara1);
+            article.appendChild(myPara2);
+            article.appendChild(myPara3);
+            article.appendChild(myPara4);
+            article.appendChild(myPara5);
+            article.appendChild(myList);
+        }
+
+
+    </script>
 </body>
 
 </html>

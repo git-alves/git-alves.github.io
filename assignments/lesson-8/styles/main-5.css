@@ -145,6 +145,28 @@ section h2{
 .forecast{
     display: none;
 
+
+}
+
+article.town-info{
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    border: 1px solid #EB7F00;
+    margin: 15px 0 0;
+}
+
+article.town-info p{
+    margin: 2px;
+    margin-bottom: 5px;
+
+}
+article.town-info h3{
+    margin-bottom: 10px;
+
 }
 
 article h3{text-align: center;
@@ -152,14 +174,27 @@ article h3{text-align: center;
 }
 
 article{
+    background-color: #fff;
     border: 1px solid #EB7F00;
     margin: 15px 0 0;
 
 }
 
 article p.town-article img {  /* This structure refers to img elements that are the posterity of paragraph elements within artcle elements */
-    width: 100%;
+    width: 95%;
+    display: block;
+    margin:auto;
+    margin-bottom: 10px;
     height: auto;/* fill the page in the small/phone view */
+}
+
+.town-article,.info{
+    margin-bottom: 10px;
+    text-align:left;
+    justify-content: center;
+    align-items: center;
+
+
 }
 
 footer {}
