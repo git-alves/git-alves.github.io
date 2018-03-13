@@ -9,75 +9,17 @@
         margin-top: 0;
     }
 
-    main figure {
-        margin: 0;
-        width: 100%;
-        display: flex;
+    section{
+        background-color: #fff;
+        margin: 0 0 34px 2px;
+        padding: 10px;
+        border: 1px solid;
+        padding: 10px;
+        box-shadow: 3px 2px #888888;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
     }
-
-    main figure img{
-        height: 250px;
-    }
-
-    main .temperature{
-        margin-top: 10px;
-        width: 100%;
-        display: flex;
-
-    }
-
-    .temperature h2{
-        margin: 0 0 10px 0;
-
-    }
-
-    .current{
-        font-size: 20px;
-        text-align: center;
-        vertical-align: middle;
-        margin-bottom: 10px;
-        display: inline-flex;
-        width: 25%;
-
-    }
-
-    .current span{
-        padding: 40px 0 40px 110px;
-        display: block;
-    }
-
-    .current picture{
-        display: flex;
-        justify-content: flex-start;
-        align-content: center;
-        margin-top: -90px;
-
-    }
-
-    .highlow{
-        text-align: center;
-        display: inline-flex;
-        justify-content: space-around;
-        width: 30%;
-    }
-
-    .highlow p{
-        display: flex;
-        margin: 40px 0;
-    }
-
-    .conditions{
-        display: inline-flex;
-        flex-direction: column;
-        width: 33%;
-    }
-    .conditions p{
-        text-align: right;
-        margin: 5px 0;
-    }
-
-    article{ border-top: 0; border-bottom: 0; margin: 0;}
-
 
     article p.town-article img{
         display: flex;
