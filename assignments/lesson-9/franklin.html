@@ -45,10 +45,11 @@
         </nav>
         <main>
             <figure>
-                <img src="images/franklin-large.jpg" alt="sunny sky" srcset="images/franklin-small.jpg 200w,
-                                 images/franklin-medium.jpg 500w,
-                                 images/franklin-large.jpg 1000w">
-
+                <picture>
+                    <source srcset="images/franklin-small.jpg" media="(max-width: 600px)"><source srcset="images/franklin-medium.jpg" media="(max-width: 800px)">
+                    <source srcset="images/franklin-large.jpg">
+                    <img src="images/franklin-large.jpg" alt="sunny sky">
+                </picture>
             </figure>
             <section class="temperature">
                 <h2>Franklin</h2>
@@ -116,11 +117,11 @@
             </article>
             <article>
                 <h3><strong>Franklin Breaks Record</strong></h3>
-                <p class="town-article">
+                <div class="town-article">
                     <img src="images/article_image.jpg" alt="">
-                        <p class="info">Franklin is a city just south of Nashville, in Tennessee. A key site of the American Civil War, it’s home to 2 properties exploring the 1864 Battle of Franklin: Carter House and Carnton Plantation, which includes the McGavock Confederate Cemetery. The 1858 Lotz House contains a large collection of 19th-century furniture. Downtown’s Main Street is lined with galleries, antique shops and restored Victorian buildings..
+                        <p>Franklin is a city just south of Nashville, in Tennessee. A key site of the American Civil War, it’s home to 2 properties exploring the 1864 Battle of Franklin: Carter House and Carnton Plantation, which includes the McGavock Confederate Cemetery. The 1858 Lotz House contains a large collection of 19th-century furniture. Downtown’s Main Street is lined with galleries, antique shops and restored Victorian buildings..
                         </p>
-                </p>
+                </div>
             </article>
         </main>
         <footer>

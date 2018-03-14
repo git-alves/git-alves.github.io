@@ -128,9 +128,11 @@ section h2{
     margin: 5px;
     text-align: center;
 }
+
 #currentTemp{
     text-align: center;
 }
+
 #current{
     font-size: 20px;
     display: flex;

@@ -79,8 +79,7 @@
     article{ border-top: 0; border-bottom: 0; margin: 0;}
 
 
-    article p.town-article img{
-        margin-top: 15px;
+    article .town-article img{
         display: flex;
         width: 50%;
         float: right;
