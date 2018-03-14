@@ -38,20 +38,20 @@
         margin-bottom: 10px;
         display: inline-flex;
         width: 25%;
+    }
+
+    .current,#currentTemp{
+        justify-content: center;
+        padding-top: 0px;
 
     }
 
-    .current span{
-        padding: 40px 0 40px 110px;
-        display: block;
-    }
-
-    .current picture{
+    .current, #weatherIcon{
         display: flex;
-        justify-content: flex-start;
+        justify-content: center;
         align-content: center;
-        margin-top: -90px;
-
+        margin-top: 10px;
+        margin-left: 60px;
     }
 
     .highlow{
@@ -62,14 +62,16 @@
     }
 
     .highlow p{
-        display: flex;
+        display:inline-flex;
+        justify-content: center;
+        align-items: center;
         margin: 40px 0;
     }
 
     .conditions{
-        display: inline-flex;
+        display: block;
         flex-direction: column;
-        width: 33%;
+        width: 50%;
     }
     .conditions p{
         text-align: right;
