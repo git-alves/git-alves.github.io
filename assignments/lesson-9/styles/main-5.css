@@ -208,9 +208,9 @@ article{
     margin: 15px 0 0;
 }
 
-article p.town-article img {  /* This structure refers to img elements that are the posterity of paragraph elements within artcle elements */
+article .town-article img {  /* This structure refers to img elements that are the posterity of paragraph elements within artcle elements */
     width: 95%;
-    display: block;
+    display: flex;
     margin:auto;
     margin-bottom: 10px;
     height: auto;/* fill the page in the small/phone view */
