@@ -82,6 +82,7 @@ nav ul {
 
 nav ul li {
 
+
 }
 nav ul li a {
     display: flex;
@@ -100,48 +101,7 @@ nav ul li.active a{background-color: rgba(0,0,0,0.2);color: #fff;}
 
 nav ul.hide{display: none;}
 
-.story{
-    background-color: #fff;
-    margin: 10px 0;
-    padding: 10px;
-    border: 1px solid;
-    padding: 10px;
-    box-shadow: 2px 2px #888888;
-    -webkit-box-sizing: border-box
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-}
-
-.story h2{
-    float:
-    margin: 5px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.story p{
-    padding: 10px;
-    margin-left: 2px;
-    margin-right: 2px;
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    text-align: center;
-}
-
-.story img{
-    border-radius: 10px;
-    margin-top: 24px;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    flex-direction: column;
-
-}
-
-
+main { }
 main h2 { text-align: center;}
 main figure { margin: 2px 0; width: 100%;}
 
@@ -149,43 +109,108 @@ main figure img {
     width: 100%;
     height: auto;
 }
-section{
-    background-color: #fff;
-    margin: 0 2px;
-    padding: 10px;
-    border: 1px solid;
-    padding: 10px;
-    box-shadow: 3px 2px #888888;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
+
+section h2{
+    display: none;
 }
-.towns h2{
-    margin-top: 2px 0px;
-    min-width: 30%;
-    color: #1595A3;
-    display: flex;
+
+
+.current p{
     justify-content: center;
     align-items: center;
+    text-align: center;
+    margin-bottom: 10px;
 }
 
- .towns p{
-    display: flex;
-    flex-direction: column;
-    margin: 2px;
-    margin-bottom: 10px;
-    justify-content: center;
+.current, #currentTemp{
     text-align: center;
 }
+#current{
+    font-size: 20px;
+    display: flex;
+    font-size: 12px;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.current picture{
+    display: block;
+    vertical-align: middle;
+    margin-left: 10px;
+}
+
+.highlow{
+    text-align: center;
+    vertical-align: middle;
+    margin-bottom: 5px;
+}
+
+.highlow p{
+    display: inline-flex;
+    margin: 0 10px;
+}
+.conditions p{
+    text-align: center;
+    margin: 5px 0;
+}
+
+.forecast{
+    display: none;
 
 
-.towns article h2{text-align: center;
+}
+
+article.town-info{
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    border: 1px solid #EB7F00;
+    margin: 15px 0 0;
+}
+
+article.town-info p{
+    margin: 2px;
+    margin-bottom: 5px;
+
+}
+article.town-info h3{
+    margin-bottom: 10px;
+
+}
+
+article h3{text-align: center;
     color: #1BBAEB;
 }
 
-.towns article{
-    border:  5px solid #1595A3;
+article{
+    background-color: #fff;
+    border: 1px solid #EB7F00;
+    margin: 15px 0 0;
+
 }
+
+article p.town-article img {  /* This structure refers to img elements that are the posterity of paragraph elements within artcle elements */
+    width: 95%;
+    display: block;
+    margin:auto;
+    margin-bottom: 10px;
+    height: auto;/* fill the page in the small/phone view */
+}
+
+.town-article,.info{
+    margin-bottom: 10px;
+    text-align:left;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+footer {}
 
 footer aside{
     display: inline-flex;
