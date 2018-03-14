@@ -41,13 +41,6 @@
 
     }
 
-    #current{
-        display: block;
-        justify-content: flex-end;
-        align-items: flex-end;
-        margin-left: 150px;
-    }
-
     .current span{
         padding: 40px 0 40px 110px;
         display: block;
@@ -55,10 +48,10 @@
 
     .current picture{
         display: flex;
-        justify-content: flex-end;
-        align-items: flex-end;
-        margin-left: 350px;
-        margin-top: -150px;
+        justify-content: flex-start;
+        align-content: center;
+        margin-top: -90px;
+
     }
 
     .highlow{
@@ -76,7 +69,6 @@
     .conditions{
         display: inline-flex;
         flex-direction: column;
-        right: 3000px;
         width: 33%;
     }
     .conditions p{
