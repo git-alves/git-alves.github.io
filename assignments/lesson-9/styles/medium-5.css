@@ -146,7 +146,8 @@
         top: -30px;
     }
 
-    article p.town-article img{
+    article .town-article img{
+        margin-top: 10px;
         width: 55%;
         float: right;
         height: 150px;
