@@ -80,7 +80,8 @@ nav ul li {}
 
 nav ul li a {
     display: grid;
-    color: rgba(255, 255, 255, 0.8);
+    color: rgb(14, 14, 14);
+    font-weight: bold;
     text-align: center;
     padding: 14px 16px;
     border-right: 1px solid #bbb;
@@ -225,6 +226,8 @@ footer p.footer-bar {
         text-align: center;
         padding: .8rem 1rem;
         border-right: 1px solid rgba(0, 0, 0, 0.3);
+        color: rgb(14, 14, 14);
+        font-weight: bold;
     }
 
     main {
