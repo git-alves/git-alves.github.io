@@ -1,0 +1,39 @@
+@media only screen and (min-width: 64em) {
+    /* Only CSS rules that need to be changed to meet the layout needs from medium to large/wide go in here */
+
+    nav ul li a{
+        padding: .6rem 1rem;
+    }
+
+    main{
+        margin-top: 0;
+    }
+
+    section{
+        background-color: #fff;
+        margin: 0 0 34px 2px;
+        padding: 10px;
+        border: 1px solid;
+        padding: 10px;
+        box-shadow: 3px 2px #888888;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+
+    article p.town-article img{
+        display: flex;
+        width: 50%;
+        float: right;
+        height: 120px;
+    }
+
+    footer aside{margin-top: -27px}
+}
+
+
+
+
+
+
+

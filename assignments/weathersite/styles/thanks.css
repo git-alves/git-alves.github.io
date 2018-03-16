@@ -1,0 +1,9 @@
+@media only screen and (min-width: 300px) {
+
+    body{background-color: #F2FFE3;}
+
+    .logo{display: flex;
+        justify-content: center;
+    }
+
+}

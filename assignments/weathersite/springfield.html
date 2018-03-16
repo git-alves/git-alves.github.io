@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en-us">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Springfield</title>
+        <meta name="author" content="Andre Alves">
+        <meta name="description" content="weather forecast website">
+        <!-- external style references in the proper cascading order -->
+        <link href="https://fonts.googleapis.com/css?family=lato" rel="stylesheet">
+        <!-- Google API font reference -->
+        <link href="styles/normalize.css" rel="stylesheet">
+        <!-- normalize useragent/browser defaults -->
+        <link href="styles/main.css" rel="stylesheet">
+        <!-- default styles - small/phone views -->
+        <link href="styles/medium.css" rel="stylesheet">
+        <!-- medium/tablet views -->
+        <link href="styles/large.css" rel="stylesheet">
+        <!-- large/wide/desktop views -->
+    </head>
+
+    <body>
+        <div class="container">
+            <header>
+                <a href="homepage.html">
+                    <img src="images/logo3.png" alt="The site logo">
+                </a>
+                <div class="site-title">
+                    <h1><strong>Live Weather</strong></h1>
+                    <div class="subheading">Updating you everyday!</div>
+                </div>
+
+            </header>
+
+            <!-- site navigation use placeholder references -->
+            <nav>
+                <button class="hamburger" onclick="toggleNavMenu()">&#9776;</button>
+                <ul id="Navigation" class="hide">
+                    <li><a href="/assignments/weathersite/homepage.html">Home</a></li>
+                    <li><a href="/assignments/weathersite/franklin.html">Franklin</a></li>
+                    <li><a href="/assignments/weathersite/greenville.html">Greenville</a></li>
+                    <li class="active" ><a href="/assignments/weathersite/springfield.html">Springfield</a></li>
+                    <li><a href="/assignments/weathersite/stormcenter.html">Storm Center</a></li>
+                    <li><a href="/assignments/weathersite/gallery.html">Gallery</a></li>
+                </ul>
+            </nav>
+            <main>
+                <figure>
+                    <picture>
+                        <source srcset="images/springfield-small.jpg" media="(max-width: 600px)"><source srcset="images/springfield-medium.jpg" media="(max-width: 800px)">
+                        <source srcset="images/springfield-large.jpg">
+                        <img src="images/springfield-large.jpg" alt="sunny sky">
+                    </picture>
+                </figure>
+                <section class="temperature">
+                    <h2>Franklin</h2>
+                    <div class="current">
+                        <p><strong>Current Weather </strong><span id="current" ></span></p>
+                        <picture>
+                            <img id="weatherIcon" src="#" alt="weather icon" >
+                        </picture>
+                        <p><strong>Current Temperature </strong><span id="currentTemp"></span> &deg;F</p>
+                    </div>
+                    <div class="highlow">
+                        <p><strong>High: </strong><span id="high" ></span> &deg;F</p>
+                        <p><strong>Low:  </strong><span id="low" ></span> &deg;F</p>
+                    </div>
+
+                    <div class="conditions">
+                        <p><strong>Precipitation: </strong><span id="precip"></span> mm</p>
+                        <p><strong>Wind Speed: </strong><span id="wind-speed"></span>  mph</p>
+                        <p><strong>Wind Chill: </strong><span id="chill" ></span> &deg;F</p>
+                        <p><strong>Additional Info:</strong><span id="forecastText" ></span></p>
+                    </div>
+
+                </section>
+
+                <section class="forecast">
+                    <h2>Forecast</h2>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th class="title" colspan="10">
+                                    10 Day Forecast
+                                </th>
+                            </tr>
+                            <tr>
+                                <th>Day 1</th>
+                                <th>Day 2</th>
+                                <th>Day 3</th>
+                                <th>Day 4</th>
+                                <th>Day 5</th>
+                                <th>Day 6</th>
+                                <th>Day 7</th>
+                                <th>Day 8</th>
+                                <th>Day 9</th>
+                                <th>Day 10</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>89&deg;F</td>
+                                <td>87&deg;F</td>
+                                <td>78&deg;F</td>
+                                <td>75&deg;F</td>
+                                <td>72&deg;F</td>
+                                <td>72&deg;F</td>
+                                <td>79&deg;F</td>
+                                <td>83&deg;F</td>
+                                <td>85&deg;F</td>
+                                <td>89&deg;F</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+                <article class="town-info">
+
+                </article>
+                <article>
+                    <h3><strong>Springfield Info</strong></h3>
+                    <div class="town-article">
+                        <img src="images/Springfield.jpg" alt="">
+                        <p>Springfield is a city in the U.S. state of Ohio and the county seat of Clark County.[6] The municipality is located in southwestern Ohio and is situated on the Mad River, Buck Creek and Beaver Creek, approximately 45 miles (72 km) west of Columbus and 25 miles (40 km) northeast of Dayton. Springfield is home to Wittenberg University, a liberal arts college.
+                        </p>
+                    </div>
+                </article>
+            </main>
+            <footer>
+                <aside>
+                    <p><strong>Live Weather</strong><br> 123 main st.<br> Franklin, MU 83454<br> (999)999.9999
+                        <br> live@weather.com
+                        <br>
+                    </p>
+                </aside>
+                <p class="footer-bar">&copy;2018 | Live Weather | <span id="currentdate">current date</span></p>
+            </footer>
+        </div>
+        <script src="scripts/wu-weather.js"></script>
+        <script src="scripts/hamburger.js"></script>
+        <script src="scripts/currentdate.js"></script>
+        <script src="scripts/windchill.js"></script>
+        <script>
+
+
+            var article = document.querySelector('article');
+            var requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
+            var request = new XMLHttpRequest();
+            request.open('GET', requestURL);
+            request.responseType = 'json';
+            request.send();
+            request.onload = function() {
+                var towns = request.response;
+                showFranklin(towns);
+            }
+            function showFranklin(jsonObj) {
+                var towns = jsonObj['towns'];
+                var myH3 = document.createElement('h3');
+                var myPara1 = document.createElement('p');
+                var myPara2 = document.createElement('p');
+                var myPara3 = document.createElement('p');
+                var myPara4 = document.createElement('p');
+                var myPara5 = document.createElement('p');
+                var myList = document.createElement('p');
+
+                myH3.textContent = towns[0].name;
+                myPara1.textContent = 'Motto: ' + towns[0].motto;
+                myPara2.textContent = 'Year Founded: ' + towns[0].yearFounded;
+                myPara3.textContent = 'Current Population: ' + towns[0].currentPopulation;
+                myPara4.textContent = 'Average Rainfall: ' + towns[0].averageRainfall;
+                myPara5.textContent = 'Events: ';
+
+                var events = towns[0].events;
+                for (var j = 0; j < events.length; j++) {
+                    var listItem = document.createElement('p');
+                    listItem.textContent = events[j];
+                    myList.appendChild(listItem);
+                }
+                article.appendChild(myH3);
+                article.appendChild(myPara1);
+                article.appendChild(myPara2);
+                article.appendChild(myPara3);
+                article.appendChild(myPara4);
+                article.appendChild(myPara5);
+                article.appendChild(myList);
+            }
+
+
+        </script>
+    </body>
+
+</html>

@@ -1,0 +1,281 @@
+body {
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    background-color: #F2FFE3;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 900px;
+    padding: 0 10px;
+}
+
+header,
+nav,
+main,
+footer {
+    /* the comma means apply the following CSS declarations to all of the listed elements */
+    /* Declare the maximum width and other main element rules to limit the stretch on wide views */
+}
+
+header {
+    vertical-align: middle;
+    margin-bottom: 20px;
+}
+
+header img {
+    display: inline-flex;
+    max-width: 20%;
+    vertical-align: middle;
+}
+
+header .site-title {
+    margin-top: -45px;
+    flex-wrap: wrap;
+    margin-left: 100px;
+}
+
+header h1 {
+    color: #1595A3;
+    margin: 0;
+    font-size: 22px;
+}
+
+header .subheading {
+    font-size: 12px;
+}
+
+nav {
+
+    background: #1595a3;
+    /* Old browsers */
+    background: -moz-linear-gradient(top, #1595a3 0%, #7db9e8 95%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #1595a3 0%, #7db9e8 95%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #1595a3 0%, #7db9e8 95%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1595a3', endColorstr='#7db9e8', GradientType=0);
+    /* IE6-9 */
+}
+
+nav button {
+    margin: .2rem 2%;
+    background-color: transparent;
+    border: none;
+    font-size: 1.6rem;
+    color: #fff;
+    display: grid;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    overflow: hidden;
+}
+
+nav ul li {}
+
+nav ul li a {
+    display: grid;
+    color: rgb(14, 14, 14);
+    font-weight: bold;
+    text-align: center;
+    padding: 14px 16px;
+    border-right: 1px solid #bbb;
+    text-decoration: none;
+    border-top: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+nav ul li a:hover {
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+nav ul li.active a {
+    background-color: rgba(0, 0, 0, 0.2);
+    color: #fff;
+}
+
+nav ul.hide {
+    display: none;
+}
+
+form#report {
+    margin: -10px;
+}
+
+fieldset {
+    background-color: #1595A3;
+    margin: 10px;
+    border-radius: .5em;
+    border: #917a56 solid 1px;
+}
+
+legend {
+    color: #000;
+    margin-left: 6%;
+    padding: .5em;
+    border-radius: .4em;
+    border: #917a56 solid 1px;
+    background-color: #F2FFE3;
+}
+
+.rangecolor,
+.radiocolor {
+    color: #fff;
+}
+
+.comment-text-area {
+    display: grid;
+    width: 100%;
+}
+
+label {
+    display: block;
+    margin: .5em;
+}
+
+label span {
+    display: block;
+    font-size: .9em;
+    color: #fff;
+    padding-top: .9em;
+    padding-bottom: .2em;
+}
+
+input.submitBtn {
+    -webkit-apperance: none;
+    color: #fff;
+    border: solid 1px #111;
+    border-radius: 7px;
+    width: 100%;
+    margin: .5em 0;
+    font-size: 1em;
+    padding: .6em;
+    background: #EB7F00;
+    box-shadow: 4px 4px 10px #666;
+}
+
+footer aside {
+    display: inline-grid;
+    padding: 0;
+    height: auto;
+    margin-top: 10px;
+    width: 100%;
+    background-color: #1BBAEB;
+    vertical-align: middle;
+    text-align: center;
+}
+
+footer p.footer-bar {
+    width: 100%;
+    margin: 0;
+    text-align: center;
+    margin-bottom: 25px;
+    background-color: #1A4C89;
+    color: #fff;
+}
+
+
+/*----------------------------  min-width 37.5em  ---------------------------------------------*/
+
+@media only screen and (min-width: 37.5em) {
+    /* Only CSS rules that need to be changed to meet the layout needs from small to medium go in here */
+    .container {
+        padding: 0 20px;
+    }
+
+    header h1 {
+        font-size: 40px;
+    }
+
+    .site-title {
+        display: inline-flex;
+        flex-direction: column;
+
+    }
+
+    header .subheading {
+        font-size: 20px;
+    }
+
+    nav button {
+        display: none;
+    }
+
+    nav ul.hide {
+        display: flex;
+    }
+
+    nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: grid;
+        overflow: hidden;
+    }
+
+    nav li {
+        float: left;
+    }
+
+    nav ul li a {
+        display: grid;
+        text-align: center;
+        padding: .8rem 1rem;
+        border-right: 1px solid rgba(0, 0, 0, 0.3);
+        color: rgb(14, 14, 14);
+        font-weight: bold;
+    }
+
+    main {
+        margin-top: 10px;
+    }
+
+    input.submitBtn {
+        -webkit-apperance: none;
+        color: #fff;
+        border: solid 1px #111;
+        border-radius: 7px;
+        width: 20%;
+        margin: .5em 0;
+        font-size: 1em;
+        padding: .6em;
+        background: #EB7F00;
+        box-shadow: 4px 4px 10px #666;
+    }
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-gap: 15px;
+    }
+}
+
+
+/*----------------------------  min-width 64em  ---------------------------------------------*/
+
+@media only screen and (min-width: 64em) {
+    /* Only CSS rules that need to be changed to meet the layout needs from medium to large/wide go in here */
+    nav ul li a {
+        padding: .6rem 1rem;
+    }
+
+    nav ul.hide {
+        display: flex;
+    }
+
+    main img:hover {
+        box-shadow: 5px 5px 10px #1595a3;
+    }
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-gap: 20px;
+    }
+
+
+}

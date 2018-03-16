@@ -1,0 +1,107 @@
+@media only screen and (min-width: 64em) {
+    /* Only CSS rules that need to be changed to meet the layout needs from medium to large/wide go in here */
+
+    nav ul li a{
+        padding: .6rem 1rem;
+    }
+
+    main{
+        margin-top: 0;
+    }
+
+    main figure {
+        margin: 0;
+        width: 100%;
+        display: flex;
+    }
+
+    main figure img{
+        height: 250px;
+    }
+
+    main .temperature{
+        margin-top: 10px;
+        width: 100%;
+        display: flex;
+
+    }
+
+    .temperature h2{
+        margin: 0 0 10px 0;
+
+    }
+
+    .current{
+        font-size: 20px;
+        text-align: center;
+        vertical-align: middle;
+        margin-bottom: 10px;
+        display: inline-flex;
+        width: 25%;
+    }
+
+    .current,#currentTemp{
+        justify-content: center;
+        padding-top: 0px;
+
+    }
+
+    .current, #weatherIcon{
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        margin-top: 10px;
+        margin-left: 60px;
+    }
+
+    .highlow{
+        text-align: center;
+        display: inline-flex;
+        justify-content: space-around;
+        width: 30%;
+    }
+
+    .highlow p{
+        display:inline-flex;
+        justify-content: center;
+        align-items: center;
+        margin: 40px 0;
+    }
+
+    .conditions{
+        display: block;
+        flex-direction: column;
+        width: 50%;
+    }
+    .conditions p{
+        text-align: right;
+        margin: 5px 0;
+    }
+
+    article{ border-top: 0; border-bottom: 0; margin: 0;}
+
+
+    article .town-article img{
+        display: flex;
+        width: 50%;
+        float: right;
+        height: 120px;
+    }
+
+    .town-article,.info{
+        margin-bottom: 1px;
+        text-align:left;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    footer aside{margin-top: -27px}
+}
+
+
+
+
+
+
+
