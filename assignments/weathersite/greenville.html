@@ -160,14 +160,14 @@
                 var myPara5 = document.createElement('p');
                 var myList = document.createElement('p');
 
-                myH3.textContent = towns[0].name;
-                myPara1.textContent = 'Motto: ' + towns[0].motto;
-                myPara2.textContent = 'Year Founded: ' + towns[0].yearFounded;
-                myPara3.textContent = 'Current Population: ' + towns[0].currentPopulation;
-                myPara4.textContent = 'Average Rainfall: ' + towns[0].averageRainfall;
+                myH3.textContent = towns[1].name;
+                myPara1.textContent = 'Motto: ' + towns[1].motto;
+                myPara2.textContent = 'Year Founded: ' + towns[1].yearFounded;
+                myPara3.textContent = 'Current Population: ' + towns[1].currentPopulation;
+                myPara4.textContent = 'Average Rainfall: ' + towns[1].averageRainfall;
                 myPara5.textContent = 'Events: ';
 
-                var events = towns[0].events;
+                var events = towns[1].events;
                 for (var j = 0; j < events.length; j++) {
                     var listItem = document.createElement('p');
                     listItem.textContent = events[j];

@@ -27,12 +27,14 @@ header img {
     display: inline-flex;
     max-width: 20%;
     vertical-align: middle;
+
 }
 
 header .site-title {
-    margin-top: -45px;
-    flex-wrap: wrap;
-    margin-left: 100px;
+    display: inline-flex;
+    flex-direction: column;
+    vertical-align: middle;
+    margin-left: 10px;
 }
 
 header h1 {
@@ -41,8 +43,9 @@ header h1 {
     font-size: 22px;
 }
 
-header .subheading {
+header .subheading{
     font-size: 12px;
+
 }
 
 nav {
@@ -259,6 +262,30 @@ footer p.footer-bar {
 
 @media only screen and (min-width: 64em) {
     /* Only CSS rules that need to be changed to meet the layout needs from medium to large/wide go in here */
+
+    header img {
+        display: inline-flex;
+        max-width: 20%;
+        vertical-align: middle;
+
+    }
+
+    header .site-title {
+        display: inline-flex;
+        flex-direction: column;
+        vertical-align: middle;
+        margin-left: 10px;
+    }
+
+    header h1 {
+        color: #1595A3;
+        margin: 0;
+    }
+
+    header .subheading{
+        font-size: 20px;
+
+    }
     nav ul li a {
         padding: .6rem 1rem;
     }
