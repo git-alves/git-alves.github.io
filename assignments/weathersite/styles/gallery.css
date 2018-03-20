@@ -134,29 +134,7 @@ footer p.footer-bar{
 
     header h1{font-size: 40px;}
 
-    header img {
-        display: inline-flex;
-        max-width: 20%;
-        vertical-align: middle;
 
-    }
-
-    header .site-title {
-        display: inline-flex;
-        flex-direction: column;
-        vertical-align: middle;
-        margin-left: 10px;
-    }
-
-    header h1 {
-        color: #1595A3;
-        margin: 0;
-    }
-
-    header .subheading{
-        font-size: 20px;
-
-    }
 
     nav button{display: none;}
 
