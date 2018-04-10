@@ -1,0 +1,65 @@
+/*--------------------------------large-----------------------------------------------------*/
+
+@media only screen and (min-width: 992px) {
+    /* Only CSS rules that need to be changed to meet the layout needs from medium to large/wide go in here */
+
+    * {
+        box-sizing: border-box;
+    }
+
+
+    .header-top{
+        padding-top: 10PX;
+        padding-bottom: 10PX;
+        display: flex;
+        background: #FFB13D;
+        -webkit-font-smoothing: subpixel-antialiased;
+        justify-content: center;
+    }
+
+    nav button{ display: none;}
+
+
+    nav a:hover {color: #EAEAEA;}
+
+    nav ul li.active a{
+        color: #EAEAEA;
+    }
+
+    #navigation {
+        display: inline-flex;
+        vertical-align: middle;
+        justify-content: center;
+        align-content: center;
+    }
+
+    a {
+        text-decoration: none;
+        font-family: 'Open Sans';
+        font-weight: 700;
+        font-style: normal;
+        font-size: 20px;
+        letter-spacing: .1em;
+        text-transform: uppercase;
+        line-height: 1em;
+        color: #6A0BFF;
+        margin: 8px;
+    }
+
+    nav a:hover{
+        color: #EAEAEA;
+
+    }
+    #navigation img{
+        display: flex;
+        width: 100px;
+        height: 80px;
+
+    }
+
+    aside p:hover{
+        color: rgb(0,0,0,0.6);
+    }
+
+
+}
