@@ -143,15 +143,13 @@
         width:  50%;
         height: auto;
     }
-    .section3,.desc{
-        display: inline-flex;
-        flex-direction: column;
+    .section3 .desc{
+        display: flex;
+        flex-direction: row;
         justify-content: flex-start;
+        align-items: flex-start;
+    
     }
-
-
-
-
 
     footer{
         padding-top: 350px;
