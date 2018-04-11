@@ -57,8 +57,33 @@
 
     }
 
+    .section3, .section4, .section5{
+        display: flex;
+        flex-direction: column;
+        align-items:baseline;
+        border: 1px solid #ccc;
+        margin: 3px;
+        width: 32%;
+    }
+
+    section .desc p{
+        margin: 5px 1px;
+        font-size: 12px;
+        text-indent: 20px;
+        text-align: justify;
+        letter-spacing: 1px;
+        padding: 8px;
+    }
+
+
+    footer{
+        margin-top: 10px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
     aside p:hover{
-        color: rgb(0,0,0,0.6);
+        color: #fff;
     }
 
 

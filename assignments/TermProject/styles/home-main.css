@@ -155,6 +155,7 @@
     .section3 {
         margin: 3px;
         border: 1px solid #ccc;
+
     }
 
     .section3 img{
@@ -166,6 +167,7 @@
     section .desc h4{
         text-align: center;
         margin: 8px;
+
     }
 
     section .desc p{
