@@ -1,7 +1,6 @@
-/*---------------------------------Medium---------------------------------------------------*/
+@media only screen and (max-width: 600px) {
+    /* Only CSS rules that need to be changed to meet the layout needs from medium to large/wide go in here */
 
-@media only screen and (min-width: 600px) {
-    /* Only CSS rules that need to be changed to meet the layout needs from small to medium go in here */
 
     * {
         box-sizing: border-box;
@@ -13,65 +12,79 @@
         background-color: #EAEAEA;
     }
 
+    a:hover {
+        text-decoration: none;
+    }
 
     .header-top{
         padding-top: 10PX;
-        padding-bottom: 10PX;
+        padding-bottom: 50PX;
         display: flex;
         background: #FFB13D;
         -webkit-font-smoothing: subpixel-antialiased;
-        justify-content: center;
+        justify-content: center
     }
 
-    nav button{ display: none;}
+    nav button {
+        vertical-align: middle;
+        top: 20px;
+        left: 10px;
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        background-color: transparent;
+        border: none;
+        font-size: 1.6rem;
+        color: #fff;
+        display: flex;
+    }
 
+    nav ul li a {
+        border-bottom: 1px solid #000;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+        color: #6A0BFF;
+        text-align: center;
+        padding: 10px 200px;
+        text-decoration: none;
+        font-family: 'Open Sans';
+        font-weight: 700;
+        font-size: 16px;
+        letter-spacing: .1em;
+    }
 
-    nav a:hover {color: #EAEAEA;}
+    nav ul li a:hover { background-color: #EAEAEA;}
 
     nav ul li.active a{
+        background-color: rgba(0,0,0,0.1);
         color: #fff;
     }
 
-    .hide li a{
-        display: flex;
-
-    }
+    .hide li a{display: none;}
 
     #navigation {
-        display: inline-flex;
-        vertical-align: middle;
-        justify-content: center;
-        align-items: center;
+        margin: 0;
+        transition: all 350ms cubic-bezier(.55,0,.1,1);
+        padding-top: 66px;
+        margin-bottom: -40px;
         list-style-type: none;
-        margin-left: -40px;
-
     }
 
     #navigation .logo {
         top: 12px;
+        left: 150px;;
+        right: 120px;;
         display: flex;
-        flex-direction: row;
-        justify-content: space-around;
+        flex-direction: column;
+        justify-content: center;
         align-items: center;
-        text-align: -webkit-match-parent;
-    }
-
-    a {
-        text-decoration: none;
-        font-family: 'Open Sans';
-        font-weight: 700;
-        font-style: normal;
-        font-size: 14px;
-        letter-spacing: .2em;
-        text-transform: uppercase;
-        line-height: 1em;
-        color: #6A0BFF;
-        margin: 8px;
-
+        position: absolute;
     }
 
     img{
-        width: 150px;
+        width: 120px;
         height: auto;
         opacity: 1;
     }
@@ -93,6 +106,7 @@
     }
 
     .section1 p{
+        font-family: 'Lato', sans-serif;
         font-size: 14px;
         margin-top: -15px;
         display: block;
@@ -106,16 +120,18 @@
         border: none;
         border-radius: 5px;
         color: white;
-        padding: 5px 8px;
+        padding: 2px 3px;
         text-align: center;
         text-decoration: none;
         display: inline-block;
-        font-size: 12px;
-        margin: 5px 1px;
+        font-size: 14px;
+        margin: 4px 2px;
         cursor: pointer;
+        width: 50%;
     }
 
     .button:hover{
+
         background-color: rgba(255, 99, 71, 2.8);
     }
 
@@ -126,19 +142,20 @@
     .section2{
         margin: 3px;
         margin-top: -12px;
+        margin-bottom: 10px;
+
     }
 
     .section2 img{
+        box-shadow: 8px 6px 8px grey;
         width: 100%;
         height: auto;
     }
 
     .section3 {
-        display: block;
-        float: right;
         margin: 3px;
         border: 1px solid #ccc;
-        width: 49%;
+
     }
 
     .section3 img{
@@ -150,23 +167,21 @@
     section .desc h4{
         text-align: center;
         margin: 8px;
+
     }
 
     section .desc p{
-        margin: 5px 1px;
+        font-family: 'Lato', sans-serif;
+        margin: 5px 6px;
         font-size: 12px;
         text-indent: 20px;
         text-align: justify;
         letter-spacing: 1px;
-        padding: 8px;
     }
 
     .section4 {
-        display: block;
-        float: left;
         margin: 3px;
         border: 1px solid #ccc;
-        width: 49%;
     }
 
     .section4 img{
@@ -176,7 +191,6 @@
     }
 
     .section5 {
-        display: block;
         margin: 3px;
         border: 1px solid #ccc;
     }
@@ -187,8 +201,9 @@
 
     }
 
+
     footer{
-        margin-top: 260px;
+        padding-top: 5px;
         width: 100%;
         box-sizing: border-box;
     }
@@ -197,14 +212,17 @@
         display: flex;
         justify-content: center;
         padding: 2px;
+        width: 100%;
         height: auto;
         margin: 5px 0 0;
         text-align: center;
         background-color: #E84740;
-
+        font-size: 14px;
     }
 
-    footer > p{
+
+    footer > p {
+        font-family: 'Lato', sans-serif;
         width: 100%;
         margin: 0;
         text-align: center;
@@ -214,7 +232,10 @@
         color: #fff;
     }
 
-/****************************** medium adventure tours ******************************************/
+
+
+
+/********************************* main adventure tours *************************************/
 
 
     .intro{
@@ -224,45 +245,39 @@
         width: 100%;
     }
 
-    .image img{
-        width: 100%;
-        height: 400px;;
+    .image{
+        margin: 3px;
+        margin-top: 0;
+        margin-bottom: 10px;
     }
 
+    .image img{
+        width: 100%;
+        height: auto;
+        box-shadow: 8px 6px 8px grey;
+    }
     .tour1{
-        display: block;
-        float: left;
-        background-color: #fff;
-        border: 2px solid #ccc;
         margin: 3px;
-        padding: 5px;
-        width: 49%;
-
+        border: 1px solid #ccc;
+        background-color: #fff;
     }
 
     .tour2{
-        display: block;
-        float: right;
-        background-color: #fff;
-        border: 2px solid #ccc;
         margin: 3px;
-        padding: 5px;
-        width: 49%;
+        border: 1px solid #ccc;
+        background-color: #fff;
     }
 
     .tour1 h3{
-        margin-top: 6px;
         font-family: 'Open Sans', sans-serif;
         color: #6A0BFF;
         text-align: center;
-
     }
+
     .tour2 h3{
-        margin-top: 6px;
         font-family: 'Open Sans', sans-serif;
         color: #6A0BFF;
         text-align: center;
-
     }
 
     .tour1 h3:hover{
@@ -276,15 +291,15 @@
     .tour1 p{
         font-family: 'Lato', sans-serif;
         margin-left: 10px;
-
     }
 
     .tour2 p{
         font-family: 'Lato', sans-serif;
         margin-left: 10px;
-
     }
 
 
 }
+
+
 

@@ -1,4 +1,4 @@
-/*--------------------------------large-----------------------------------------------------*/
+/*-------------------------------------large-----------------------------------------------------*/
 
 @media only screen and (min-width: 992px) {
     /* Only CSS rules that need to be changed to meet the layout needs from medium to large/wide go in here */
@@ -6,7 +6,6 @@
     * {
         box-sizing: border-box;
     }
-
 
     .header-top{
         padding-top: 10PX;
@@ -66,17 +65,23 @@
         border-left: 1px solid;
         border-right: 1px solid red;
         border-bottom: 1px solid red;
-        background-color: rgb(0,0,0,0.8);
+        background-color: rgb(0,0,0,0.6);
     }
 
     .section1 h3{
         font-family: 'Open Sans';
-        color: #;
+        color: red;
         margin-top: 1px;
         display: flex;
+        text-shadow: 1px 1px red;
         justify-content: center;
         flex-direction: row;
     }
+
+    .section1 h3:hover{
+        color: #fff;
+    }
+
 
     .section1 p{
         font-size: 14px;
@@ -89,11 +94,11 @@
     }
 
     .button{
-        background-color: rgba(255, 99, 71, 0.8);
+        background-color: red;
         border: none;
         border-radius: 5px;
         color: white;
-        padding: 5px px;
+        padding: 5px;
         text-align: center;
         text-decoration: none;
         display: inline-block;
@@ -116,7 +121,7 @@
     }
 
     .section2 img{
-        height: 550px;;
+        height: 550px;
     }
 
 
@@ -161,7 +166,7 @@
 
 
     footer{
-        margin-top: 30px;
+        margin-top: 10px;
         width: 100%;
         box-sizing: border-box;
     }
@@ -173,5 +178,19 @@
     footer > p:hover{
         color: #000;
     }
+
+    /****************************** large adventure tours **************************************/
+
+    .image img{
+        height: 550px;
+    }
+
+    .tour1 {
+        padding: 3px;
+    }
+    .tour2 {
+        padding: 3px;
+    }
+
 
 }
