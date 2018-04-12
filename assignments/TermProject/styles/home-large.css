@@ -52,7 +52,7 @@
     }
     #navigation img{
         display: flex;
-        width: 100px;
+        width: 200px;
         height: 80px;
 
     }
@@ -63,8 +63,6 @@
         right: 50px;;
         width: 35%;
         padding: 10px;
-        border-radius: 10px;
-        border-left: 1px solid;
         border-right: 1px solid red;
         border-bottom: 1px solid red;
         background-color: rgb(0,0,0,0.4);
