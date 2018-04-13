@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en-us">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Events</title>
+
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+
+
+
+        <link href="styles/normalize.css" rel="stylesheet">
+
+        <link href="styles/main.css" rel="stylesheet">
+        <link href="styles/home-medium.css" rel="stylesheet">
+        <link href="styles/home-large.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <header  class="header-top">
+            <nav>
+                <button class="hamburger" onclick="toggleNavMenu()">&#9776;</button>
+
+                <ul id="navigation" class="hide">
+                    <li><a  href="/assignments/TermProject/home-page.html">HOME</a></li>
+                    <li ><a  href="/assignments/TermProject/tours.html">TOURS</a></li>
+                    <li class="active"><a  href="#">EVENTS</a></li>
+                    <li class="logo"><img src="images/logo5.png" alt="logo-header"></li>
+                    <li><a href="#">SALES</a></li>
+                    <li><a href="#">SERVICES</a></li>
+                    <li><a href="#">CONTACT</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section>
+                <div class="image">
+                    <img  class="main-image" src="images/tour-image.jpg" alt="mountain bike image">
+                </div>
+            </section>
+            <section>
+                <div class="intro">
+                    <h2>event</h2>
+                </div>
+            </section>
+            <section class="main-section">
+                <div class="event">
+                    <h3></h3>
+                    <p><strong>Local: </strong>We will ride on gravel USFS roads and some double track with gradual inclines and descents.</p>
+                    <p><strong>Skill Level:</strong>  beginner to intermediate riders</p>
+                    <p><strong>Cost: </strong> $140 per person or $120 per person with 2 or more people</p>
+                    <p><strong>Distance:</strong> 4 miles</p>
+                </div>
+                <div class="form">
+                    <h3></h3>
+                    <p><strong>Local:</strong> USFS gravel roads, double track, possibly single track (ability depending)</p>
+                    <p><strong>Skill Level:</strong>  intermediate to advanced intermediate</p>
+                    <p><strong>Cost: </strong> $220 per person or
+                        $180 per person for 2 or more people</p>
+                    <p><strong>Distance:</strong> 10 miles</p>
+                </div>
+            </section>
+        </main>
+        <div>
+            <footer>
+                <aside>
+                    <p><strong>Contact Information</strong><span><br>The Mountain spoke<br> 123 main st.<br> Bozeman, MT 83454<br> (999)999.9999
+                        <br> mountain@spoke.com
+                        <br></span>
+                    </p>
+                </aside>
+                <p class="footer-bar">&copy;2018 | Mountain spoke | <span id="currentdate">current date</span></p>
+            </footer>
+        </div>
+        <script src="scripts/menu.js"></script>
+        <script src="scripts/currentdate.js"></script>
+    </body>
+</html>
