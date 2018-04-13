@@ -256,47 +256,33 @@
         height: auto;
         box-shadow: 8px 6px 8px grey;
     }
+
+    .main-section{
+        margin: 3px;
+        border: 1px solid #ccc;
+        background-color: #fff;
+    }
+
     .tour1{
-        margin: 3px;
-        border: 1px solid #ccc;
-        background-color: #fff;
+        border-bottom: 6px solid #ccc;
     }
 
-    .tour2{
-        margin: 3px;
-        border: 1px solid #ccc;
-        background-color: #fff;
-    }
 
-    .tour1 h3{
+    section h3{
         font-family: 'Open Sans', sans-serif;
         color: #6A0BFF;
         text-align: center;
     }
 
-    .tour2 h3{
-        font-family: 'Open Sans', sans-serif;
-        color: #6A0BFF;
-        text-align: center;
-    }
-
-    .tour1 h3:hover{
+    section h3:hover{
         color: #E84740;
     }
 
-    .tour2 h3:hover{
-        color: #E84740;
-    }
-
-    .tour1 p{
+    .main-section p{
         font-family: 'Lato', sans-serif;
         margin-left: 10px;
     }
 
-    .tour2 p{
-        font-family: 'Lato', sans-serif;
-        margin-left: 10px;
-    }
 
 
 }
