@@ -261,7 +261,7 @@
         position: absolute;
         width: 100%;
         height: auto;
-        background-color: rgb(0,0,0,0.6);
+        background-color: rgba(0,0,0,0.6);
     }
 
     .annual-event h3, h4{

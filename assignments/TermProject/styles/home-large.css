@@ -65,7 +65,7 @@
         border-left: 1px solid;
         border-right: 1px solid red;
         border-bottom: 1px solid red;
-        background-color: rgb(0,0,0,0.6);
+        background-color: rgba(0,0,0,0.6);
     }
 
     .section1 h3{
