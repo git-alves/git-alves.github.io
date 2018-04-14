@@ -40,7 +40,7 @@
     }
 
     nav ul li a {
-        border-bottom: 1px solid #000;
+        border-bottom: 1px solid grey;
         display: flex;
         flex-direction: column;
         align-content: center;
@@ -281,6 +281,88 @@
     .main-section p{
         font-family: 'Lato', sans-serif;
         margin-left: 10px;
+    }
+
+
+    /*********************************** main events page ***************************************/
+
+    .event{
+        border-bottom: 8px solid #EAEAEA;
+    }
+
+    .registration h2{
+        text-align: center;
+        text-shadow: 2px 1px gray;
+        width: 100%;
+    }
+
+    fieldset{
+        background-color: #FFB13D;
+        border-radius: .8em;
+        border: 1px solid;
+        margin: 2%;
+    }
+
+    legend{
+        margin-left: 20px;
+        border: 3px solid #b67045;
+        background-color: #E84740;
+        border-radius: .4em;
+        font-size: 16px;
+        color: #fff;
+    }
+
+    label {
+        display: block;
+        margin: 5px;
+        margin: 0;
+    }
+
+
+    label span {
+        display: block;
+        font-size: 14px;
+        color: #6A0BFF;
+        padding-top: 6px;
+        padding-bottom: .2em;
+    }
+
+    .comment-text-area {
+        display: grid;
+        width: 100%;
+    }
+
+
+    input.submitBtn {
+        -webkit-apperance: none;
+        color: #fff;
+        border: solid 1px #111;
+        border-radius: 7px;
+        width: 25%;
+        margin: .5em 0;
+        font-size: 1em;
+        padding: .6em;
+        background: #6A0BFF;
+        box-shadow: 4px 4px 10px #666;
+    }
+
+
+
+/*************************************** main thanks page ***************************************/
+
+    .thanks{
+        height: 500px;
+
+    }
+
+    .thanks h2{
+        text-align: center;
+    }
+
+    .thanks h3{
+        font-family: 'Open Sans', sans-serif;
+        color: green;
+        text-align: center;
     }
 
 
